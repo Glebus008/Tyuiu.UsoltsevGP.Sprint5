@@ -32,6 +32,7 @@ namespace Tyuiu.UsoltsevGP.Sprint5.Task0.V5
 
             Console.WriteLine("Файл: " + ds.SaveToFileTextData(x));
             Console.WriteLine("Создан");
+            Console.ReadKey();
         }
     }
 }
