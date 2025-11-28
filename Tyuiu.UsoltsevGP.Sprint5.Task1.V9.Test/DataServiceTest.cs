@@ -1,6 +1,6 @@
 ﻿using System.IO;
-using Tyuiu.UsoltsevGP.Sprint5.Task0.V5.Lib;
-namespace Tyuiu.UsoltsevGP.Sprint5.Task0.V5.Test
+using Tyuiu.UsoltsevGP.Sprint5.Task1.V9.Lib;
+namespace Tyuiu.UsoltsevGP.Sprint5.Task1.V9.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -9,7 +9,7 @@ namespace Tyuiu.UsoltsevGP.Sprint5.Task0.V5.Test
         public void CheckedExistsFile()
         {
             DataService ds = new DataService();
-            string path = @"C:\Tasks\OutPutFileTask0.txt";
+            string path = @"C:\Tasks\OutPutFileTask1.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
