@@ -3,9 +3,9 @@ using Tyuiu.UsoltsevGP.Sprint5.Task5.V24.Lib;
 namespace Tyuiu.UsoltsevGP.Sprint5.Task5.V24
 {
     internal class Program
-{
-    static void Main(string[] args)
     {
+    static void Main(string[] args)
+        {
         DataService ds = new DataService();
         Console.Title = "Спринт #5 | Выполнил: Усольцев Г. П. | РППб-25-1";
         Console.WriteLine("***************************************************************************");
@@ -34,6 +34,6 @@ namespace Tyuiu.UsoltsevGP.Sprint5.Task5.V24
         double res = ds.LoadFromDataFile(path);
         Console.WriteLine(res);
         Console.ReadKey();
+        }
     }
-}
 }
