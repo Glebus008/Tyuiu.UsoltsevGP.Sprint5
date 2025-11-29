@@ -23,15 +23,15 @@ namespace Tyuiu.UsoltsevGP.Sprint5.Task5.V24
             Console.WriteLine("***************************************************************************");
 
             string path = @"C:\DataSprint5\InPutDataFileTask7V16.txt";
+            string pathSaveFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask7.txt");
             Console.WriteLine("Данные находятся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            ds.LoadDataAndSave(@"C:\DataSprint5\InPutDataFileTask7V16.txt");
-            string text = File.ReadAllText(Path.Combine(new string[] { Path.GetTempPath(), "OutPutDataFileTask7V16.txt" }));
-            Console.WriteLine(text);
+            pathSaveFile = ds.LoadDataAndSave(path);
+            Console.WriteLine(pathSaveFile);
             Console.ReadKey();
         }
     }
